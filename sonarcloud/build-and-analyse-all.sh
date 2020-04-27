@@ -27,8 +27,7 @@ do
         -Dsonar.cfamily.build-wrapper-output=build/${SOFTWARE_FULLNAME}/bo                      \
         -Dsonar.cfamily.cache.enabled=true                                                      \
         -Dsonar.cfamily.threads=8                                                               \
-        -Dsonar.scm.exclusions.disabled=true                                                    \
-        -Dsonar.pullrequest.base=enable-sonarcloud
+        -Dsonar.scm.exclusions.disabled=true
 
     done
 done
