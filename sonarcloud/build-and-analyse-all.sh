@@ -24,10 +24,11 @@ do
         -Dsonar.projectKey=${SOFTWARE_FULLNAME}                                                 \
         -Dsonar.projectVersion=dev                                                              \
         -Dsonar.sources=.                                                                       \
-        -Dsonar.cfamily.build-wrapper-output=build/${SOFTWARE_FULLNAME}/bo                 \
+        -Dsonar.cfamily.build-wrapper-output=build/${SOFTWARE_FULLNAME}/bo                      \
         -Dsonar.cfamily.cache.enabled=true                                                      \
         -Dsonar.cfamily.threads=8                                                               \
-        -Dsonar.scm.exclusions.disabled=true
+        -Dsonar.scm.exclusions.disabled=true                                                    \
+        -Dsonar.pullrequest.base=enable-sonarcloud
 
     done
 done
