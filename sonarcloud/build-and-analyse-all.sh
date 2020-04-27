@@ -18,7 +18,7 @@ do
 
       path="build/${SOFTWARE_FULLNAME}/bo"
 
-      mkdir -p path
+      mkdir -p "$path"
 
       arduino-cli cache clean
       build-wrapper-linux-x86-64 --out-dir "$path" bash sonarcloud/build.sh > /dev/null
